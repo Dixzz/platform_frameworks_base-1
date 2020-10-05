@@ -242,6 +242,12 @@
         <item name="android:textColor">@color/dark_mode_qs_icon_color_single_tone</item>
     </style>
 
+    <style name="TextAppearance.QS.Date">
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
     <style name="TextAppearance.DeviceManagementDialog">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
@@ -794,4 +800,9 @@
           * Message: body, 16 sp -->
     <style name="Theme.ControlsRequestDialog" parent="@*android:style/Theme.DeviceDefault.Dialog.Alert"/>
 
+   <style name="TextAppearance.StatusBar.ClockStatus"
+        <item name="android:textSize">@dimen/status_bar_clock_size</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>"
+        <item name="android:textColor">@color/clock_color</item>
+    </style>
 </resources>
