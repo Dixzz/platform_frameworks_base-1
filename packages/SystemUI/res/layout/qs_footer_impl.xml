@@ -32,8 +32,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:gravity="end" >
+        android:orientation="vertical"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+	
+	<include layout="@layout/quick_settings_brightness_dialog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="@dimen/qs_footer_margin"
+            android:layout_marginEnd="@dimen/qs_footer_margin"
+            android:gravity="end" >
 
         <com.android.keyguard.AlphaOptimizedLinearLayout
             android:id="@+id/qs_footer_actions_edit_container"
@@ -129,5 +141,6 @@
 
             </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
         </com.android.keyguard.AlphaOptimizedLinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </com.android.systemui.qs.QSFooterImpl>
